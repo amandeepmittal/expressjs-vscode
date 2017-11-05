@@ -21,6 +21,10 @@
                 "language": "javascript",
                 "path": "./snippets/api-methods.json"
             },
+            {
+                "language": "javascript",
+                "path": "./snippets/middleware.json"
+            }
         ]
     },
     "keywords": [

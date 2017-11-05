@@ -1,0 +1,37 @@
+{
+  "helmet": {
+    "prefix": "helmet",
+    "body": "app.use(helemt()",
+    "description": "Security level middleware"
+  },
+  "morgan": {
+    "prefix": "logger",
+    "body": "app.use(logger());",
+    "description": "initializing the logger/morgan middleware"
+  },
+  "compression": {
+    "prefix": "compress",
+    "body": "app.use(compression({level:zlib.Z_DEFAULT_COMPRESSION}));",
+    "description": "Compression Middleware"
+  },
+  "bodyparser.json": {
+    "prefix": "bodyParser.json",
+    "body": "app.use(bodyParser.json());",
+    "description": "for parsing application/json"
+  },
+  "bodyparser.urlencoded": {
+    "prefix": "bodyParser.url",
+    "body": "app.use(bodyParser.urlencoded({extended: true}));",
+    "description": "for parsing application/x-www-form-urlencoded"
+  },
+  "method override": {
+    "prefix": "methodoverride",
+    "body":"app.use(methodOverride('_method'));",
+    "description": "methodOverride: override with POST having ?_method=DELETE"
+  },
+  "static file": {
+    "prefix": "staticfile",
+    "body": "app.use(express.static(__dirname + '/public'));",
+    "description": "static file middleware "
+  }
+}
