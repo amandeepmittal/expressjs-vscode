@@ -1,0 +1,21 @@
+{
+    "name": "expressjs",
+    "displayName": "expressjs",
+    "description": "Expressjs Snippets",
+    "version": "0.0.1",
+    "publisher": "amandeepmittal",
+    "engines": {
+        "vscode": "^1.17.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}
