@@ -28,6 +28,10 @@
             {
                 "language": "javascript",
                 "path": "./snippets/router.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/response.json"
             }
         ]
     },

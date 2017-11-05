@@ -1,0 +1,37 @@
+{
+  "res.json": {
+    "prefix": "res.json",
+    "body": " res.json(${1:value});",
+    "description": "Send a JSON response"
+  },
+  "res.jsonp": {
+    "prefix": "res.jsonp",
+    "body": " res.jsonp(${1:value});",
+    "description": "Send a JSON response with JSONP support"
+  },
+  "res.redirect(state, path)": {
+    "prefix": "res.redirect",
+    "body": " res.redirect('${1:value}');",
+    "description": "Redirects to the URL derived from the specified path"
+  },
+  "res.render": {
+    "prefix": "res.render",
+    "body": "res.render(${1:path});",
+    "description": "Renders a view and sends the rendered HTML string to the client"
+  },
+  "res.send": {
+    "prefix": "res.send",
+    "body": "res.send(${1:value});",
+    "description": "Sends the HTTP response"
+  },
+  "res.status": {
+    "prefix": "res.status",
+    "body": "res.status(${1:value});",
+    "description": "Sets the HTTP status for the response. It is a chainable alias of Node’s response.statusCode"
+  },
+  "res.status().send()": {
+    "prefix": "rss",
+    "body":"res.status(${1:value}).send(${2:value});",
+    "description": "res.status() chained with res.send()"
+  }
+}
