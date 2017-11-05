@@ -1,1 +1,17 @@
-{}
+{
+  "require express module": {
+    "prefix": "express",
+    "body": "const express = require('express');",
+    "description": "Require Expess package from node_modules/"
+  },
+  "import express module": {
+    "prefix": "iexpress",
+    "body": "import express from 'express';",
+    "description": "Import Expess package from node_modules/"
+  },
+  "app": {
+    "prefix": "capp",
+    "body": "const app = express();",
+    "description": "Initiazlizing app variable"
+  }
+}
