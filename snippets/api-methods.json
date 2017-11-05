@@ -1,0 +1,105 @@
+{
+  "app.all": {
+    "prefix": "app.all",
+    "body": [
+      "app.all('${1:path}', (req, res, next) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Similar to app.METHOD(), matches all HTTP requests"
+  },
+  "app.delete": {
+    "prefix": "app.delete",
+    "body": [
+      "app.delete('${1:path}', (req, res) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "To route to a specified path with a callback"
+  },
+  "app.disable": {
+    "prefix": "app.disable",
+    "body": "app.disable(${1:name});",
+    "description":"Sets the Boolean setting name to false, where name is one of the properties from the app settings table."
+  },
+  "app.disabled": {
+    "prefix": "app.disabled",
+    "body": "app.disabled(${1:name});",
+    "description": "Returns true if the Boolean setting name is disabled (false), where name is one of the properties from the app settings table."
+  },
+  "app.enable": {
+    "prefix": "app.enable",
+    "body": "app.enable(${1:name});",
+    "description": "Sets the Boolean setting name to true, where name is one of the properties from the app settings table."
+  },
+  "app.enabled": {
+    "prefix": "app.enabled",
+    "body": "app.enabled(${1:name});",
+    "description": "Returns true if the setting name is enabled (true), where name is one of the properties from the app settings table."
+  },
+  "app.get": {
+    "prefix": "app.get",
+    "body": [
+      "app.get('${1:path}', (req, res) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Routes HTTP GET request."
+  },
+  "app.post": {
+    "prefix": "app.post",
+    "body": [
+      "app.post('${1:path}', (req, res) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Routes HTTP POST request."
+  },
+  "app.put": {
+    "prefix": "app.put",
+    "body": [
+      "app.put('${1:path}', (req, res) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Routes HTTP PUT request."
+  },
+  "app.patch": {
+    "prefix": "app.patch",
+    "body": [
+      "app.patch('${1:path}', (req, res) => {",
+      "\t$2",
+      "});"
+    ],
+    "description": "Routes HTTP PATCH request."
+  },
+  "app.listen": {
+    "prefix": "listen",
+    "body": " app.listen(${1:port});",
+    "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+  },
+  "app.listen template": {
+    "prefix": "app.listen",
+    "body": [
+      "app.listen(${1:port}, () => {",
+      "\tconsole.log(`Server started on ${2:port}`);",
+      "});"
+    ],
+    "description": "Starts a UNIX socket and listens for connections on the given path. This method is identical to Node’s http.Server.listen()"
+  },
+  "app.route": {
+    "prefix": "app.route",
+    "body": "app.route('${1:route}')",
+    "description": "Returns an instance of a single route, which you can then use to handle HTTP verbs with optional middleware"
+  },
+  "app.set(name, value)": {
+    "prefix": "app.set",
+    "body": "app.set('${1:name}', '${2:value}');",
+    "description": "Assigns setting name to value, where name is one of the properties from the app settings table."
+  },
+  "app.use": {
+    "prefix": "app.use",
+    "body": "app.use($1);",
+    "description": "Mounts the specified middleware function or functions at the specified path."
+  }
+}
