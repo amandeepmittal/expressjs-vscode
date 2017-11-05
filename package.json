@@ -4,6 +4,7 @@
     "description": "Expressjs Snippets",
     "version": "0.0.1",
     "publisher": "amandeepmittal",
+    "icon": "images/expressjs.png",
     "engines": {
         "vscode": "^1.17.0"
     },
