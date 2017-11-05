@@ -24,6 +24,10 @@
             {
                 "language": "javascript",
                 "path": "./snippets/middleware.json"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/router.json"
             }
         ]
     },

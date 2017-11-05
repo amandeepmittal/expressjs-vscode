@@ -1,0 +1,52 @@
+{
+  "Router": {
+    "prefix": "router",
+    "body": "const router = express.Router();",
+    "description": "initializing Router module"
+  },
+  "router.all": {
+    "prefix": "router.all",
+    "body": [
+      "router.all('${1:path}', (req, res, next) => {",
+        "$2",
+      "});"
+    ],
+    "description": "This method is like the standard router.METHOD() methods, except it matches all HTTP verbs."
+  },
+  "router.delete": {
+    "prefix": "router.delete",
+    "body": [
+      "router.delete('${1:path}', (req, res) => {",
+        "$2",
+      "});"
+    ],
+    "description": "Routes HTTP DELETE requests to the specified path with the specified callback functions."
+  },
+  "router.get": {
+    "prefix": "router.get",
+    "body": [
+      "router.get('${1:path}', (req, res) => {",
+        "$2",
+      "});"
+    ],
+    "description": "Routes HTTP GET request."
+  },
+  "router.post": {
+    "prefix": "router.post",
+    "body": [
+      "router.post('${1:path}', (req, res) => {",
+        "$2",
+      "});"
+    ],
+    "description": "Routes HTTP POST request."
+  },
+  "router.put": {
+    "prefix": "router.put",
+    "body": [
+      "router.put('${1:path}', (req, res) => {",
+        "$2",
+      "});"
+    ],
+    "description": "Routes HTTP PUT request."
+  }
+}
