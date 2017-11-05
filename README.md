@@ -1,65 +1,65 @@
-# expressjs README
+# Expressjs Snippets
 
-This is the README for your extension "expressjs". After writing up a brief description, we recommend including the following sections.
+A collection of snippets for [Express.js](https://github.com/expressjs) for VSCode. To initiate, you can either use shorthand methods or type an express method and rest will be autocomplete.
 
-## Features
+- Supports es6 syntax
+- Applicable upto Expressjs 4.x.x version
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Install
+Press F1 and select Extensions: Install Extensions. Search for and select `expressjs`.
 
-For example if there is an image subfolder under your extension project workspace:
+## Snippets
 
-\!\[feature X\]\(images/feature-x.png\)
+### Express API
+- `app.all`
+- `app.delete`
+- `app.disable`
+- `app.disabled`
+- `app.enable` 
+- `app.enabled`
+- `app.get`
+- `app.post`
+- `app.put` 
+- `app.listen` template
+- `app.patch`
+- `listen` app.listen(${1:port});
+- `app.route `
+- `app.set`
+- `app.use`
+- `res.json`
+- `res.jsonp`
+- `res.redirect`
+- `res.render`
+- `res.send`
+- `res.status`
+- `rss` res.status().send();
+- `router`  express.Router() 
+- `router.get`
+- `router.apost`
+- `router.put`
+- `router.all`
+- `router.delete`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+**Initializing `app` variable**
+- `app` const app = express ;
 
-## Requirements
+**Requiring Express**
+- `express` const express = require('express');
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+**Requiring Express-Session**
+- `session` const session = require('express-session');
 
-## Extension Settings
+### Commonly used Middleware
+- `bodyParser.json` app.use(bodyParser.json );
+- `bodyParser.url` app.use(bodyParser.urlencoded({extended: true}));
+-` methodoverride` app.use(methodOverride('method'));
+- `staticfile` app.use(express.static('public'));
+- `compress` app.use(compression({level:zlib.Z_DEFAULT_COMPRESSION}));
+- `helmet` app.use(helmet );
+- `logger` app.use(logger );
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+#### Contribute
+Pull requests for more snippets or any other issue(s) are welcome.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+#### License
+This software is released under the terms of the MIT license.
